@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+.festive {
+    color: blue;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+.festive:hover {
+    font-size: 1.25rem;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #fff;
+    padding: 16px 0;
+}
+
+.header .container {
+    height: 48px;
+    display: flex;
+    max-width: 1280px;
+}
+
+.branding a {
+    display: flex;
+    align-items: center;
+}
+
+.branding logo {
+    max-height: 48px;
+}
+
+.title {
+    font-size: 1.33rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.light {
+    color: darkgray;
+}
+
+.current {
+    background-color: #000;
+    color: #fff;
+}
+
+.topnav {
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+}
+
+.topnav a {
+    float: right;
+    padding: 4px 6px;
+    margin: auto 6px;
+}
+
+.branding:hover, .topnav a:hover {
+    opacity: 0.6;
+}

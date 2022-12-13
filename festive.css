@@ -1,0 +1,42 @@
+body {
+    background-image: url("img/festive22/Snow.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.surprise {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.credit {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.dragon {
+    padding: 100px 0;
+    position: relative;
+}
+
+.clickable {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 245px;
+    left: 185px;
+}
+
+p.footer {
+    text-align: center;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0.75rem;
+}
