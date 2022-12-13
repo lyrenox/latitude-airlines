@@ -29,7 +29,7 @@
         <section class="surprise">
             <div class="dragon">
                 <img src="img/festive22/latias-festive.png", height="400px">
-                <span class="clickable"></span>
+                <span class="clickable" onclick="show()"></span>
             </div>
             <div class="credit">
                 <p>
@@ -40,5 +40,26 @@
             </div>
         </section>
         <p class="footer">Open the present for a surprise!</p>
+        <section id="popup">
+            <div class="wrapper">
+                <div class="popup-content">
+                    <img class="popup-image" src="img/festive22/Image_22_30_14.png" alt="Gazing across the river in Alto Mare.">
+                    <span class="secret">v=</span>
+                </div>
+                <span class="close-button" onclick="hide()">x</span>
+            </div>
+            
+            <script>
+                function show() {
+                    var popup = document.getElementById("popup");
+                    popup.classList.toggle("active");
+                }
+
+                function hide() {
+                    var popup = document.getElementById("popup");
+                    popup.classList.toggle("active");
+                }
+            </script>
+        </section>
     </body>
 </html>
