@@ -24,6 +24,13 @@
                     <a>Pokemon Games</a>
                     <a>Book a Flight</a>
                 </nav>
+                <button class="show-menu" onclick="toggle('sidenav')">☰</button>
+                <div id="sidenav">
+                    <button class="hide-menu" onclick="toggle('sidenav')">x</button>
+                    <a class="festive" href="festive22-1.html">Open🎁</a>
+                    <a>Pokemon Games</a>
+                    <a>Book a Flight</a>
+                </div>
             </div>
         </section>
         <section class="main">
@@ -41,5 +48,12 @@
         <section class="footer">
             <p>Join our Discord server! <a href="https://discord.gg/WQSbBrFYaB" target=”_blank”>Open in new tab</a></p>
         </section>
+
+        <script>
+            function toggle(id) {
+                var popup = document.getElementById(id);
+                popup.classList.toggle("active");
+            }
+        </script>
     </body>
 </html>

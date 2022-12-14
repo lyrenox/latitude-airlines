@@ -23,6 +23,7 @@ body {
 .dragon {
     padding: 100px 0;
     position: relative;
+    overflow: hidden;
 }
 
 .clickable {
@@ -44,20 +45,20 @@ p.footer {
     padding: 1rem;
 }
 
-#popup {
+#popup-present {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,30, 0.6);
     position: fixed;
     top: 0%;
-    z-index: 1;
+    z-index: 2;
     visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#popup.active {
+#popup-present.active {
     visibility: visible;
 }
 

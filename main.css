@@ -37,6 +37,7 @@ a {
 }
 
 .branding a {
+    cursor: pointer;
     display: flex;
     align-items: center;
 }
@@ -61,17 +62,77 @@ a {
 }
 
 .topnav {
-    display: flex;
+    display: none;
     flex: 1 1 0%;
     justify-content: flex-end;
 }
 
-.topnav a {
+.topnav a, #sidenav a {
+    cursor: pointer;
     float: right;
     padding: 4px 6px;
+}
+
+.topnav a {
     margin: auto 6px;
 }
 
-.branding:hover, .topnav a:hover {
+#sidenav a{
+    width: 100%;
+    margin: 0.5rem;
+    float: left;
+}
+
+.show-menu, .hide-menu {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.33em;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+.show-menu {
+    display: inline;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.hide-menu {
+    display: inline;
+    float: right;
+    padding: 1rem;
+}
+
+#sidenav {
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+#sidenav.active {
+    visibility: visible;
+}
+
+@media screen and (min-width: 801px) {
+    .topnav {
+        display: flex;
+    }
+
+    .show-menu {
+        display: none;
+    }
+
+    #sidenav.active {
+        visibility: hidden;
+    }
+}
+
+.branding:hover, .topnav a:hover, #sidenav a:hover {
     opacity: 0.6;
 }

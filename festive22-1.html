@@ -24,12 +24,20 @@
                     <a>Pokemon Games</a>
                     <a>Book a Flight</a>
                 </nav>
+                <button class="show-menu" onclick="toggle('sidenav')">☰</button>
+            </div>
+            <div id="sidenav">
+                <button class="hide-menu" onclick="toggle('sidenav')">x</button>
+                <a class="current">Day 1</a>
+                <a>Pokemon Games</a>
+                <a>Book a Flight</a>
             </div>
         </section>
+
         <section class="surprise">
             <div class="dragon">
                 <img src="img/festive22/latias-festive.png", height="400px">
-                <span class="clickable" onclick="show()"></span>
+                <span class="clickable" onclick="toggle('popup-present')"></span>
             </div>
             <div class="credit">
                 <p>
@@ -40,26 +48,22 @@
             </div>
         </section>
         <p class="footer">Open the present for a surprise!</p>
-        <section id="popup">
+
+        <section id="popup-present">
             <div class="wrapper">
                 <div class="popup-content">
                     <img class="popup-image" src="img/festive22/Image_22_30_14.png" alt="Gazing across the river in Alto Mare.">
                     <span class="secret">v=</span>
                 </div>
-                <span class="close-button" onclick="hide()">x</span>
+                <span class="close-button" onclick="toggle('popup-present')">x</span>
             </div>
-            
-            <script>
-                function show() {
-                    var popup = document.getElementById("popup");
-                    popup.classList.toggle("active");
-                }
-
-                function hide() {
-                    var popup = document.getElementById("popup");
-                    popup.classList.toggle("active");
-                }
-            </script>
         </section>
+
+        <script>
+            function toggle(id) {
+                var popup = document.getElementById(id);
+                popup.classList.toggle("active");
+            }
+        </script>
     </body>
 </html>
