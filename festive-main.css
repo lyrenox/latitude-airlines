@@ -26,6 +26,14 @@ body {
     overflow: hidden;
 }
 
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
 .clickable {
     cursor: pointer;
     width: 60px;
@@ -33,16 +41,6 @@ body {
     position: absolute;
     bottom: 245px;
     left: 185px;
-}
-
-p.footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    text-align: center;
-    background-color: aliceblue;
-    margin: 0;
-    padding: 1rem;
 }
 
 #popup-present {
@@ -56,6 +54,7 @@ p.footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #popup-present.active {
@@ -81,19 +80,6 @@ p.footer {
     right: 0;
     bottom: 0;
     left: 0;
-}
-
-.popup-image {
-    width: 100%;
-}
-
-.secret {
-    position: absolute;
-    top: 3%;
-    right: 12%;
-    color: #fff;
-    opacity: 0.2;
-    transform: rotate(30deg);
 }
 
 .close-button {

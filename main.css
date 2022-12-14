@@ -10,16 +10,6 @@ a {
     text-decoration: none;
 }
 
-.festive {
-    color: blue;
-    font-weight: bold;
-    transition-duration: 0.5s;
-}
-
-.festive:hover {
-    font-size: 1.25rem;
-}
-
 .container {
     width: 90%;
     margin: 0 auto;
@@ -56,11 +46,6 @@ a {
     color: darkgray;
 }
 
-.current {
-    background-color: #000;
-    color: #fff;
-}
-
 .topnav {
     display: none;
     flex: 1 1 0%;
@@ -71,6 +56,8 @@ a {
     cursor: pointer;
     float: right;
     padding: 4px 6px;
+    text-decoration: none;
+    color: #000;
 }
 
 .topnav a {
@@ -81,6 +68,21 @@ a {
     width: 100%;
     margin: 0.5rem;
     float: left;
+}
+
+a.festive {
+    color: blue;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+a.current {
+    background-color: #000;
+    color: #fff;
+}
+
+.festive:hover {
+    font-size: 1.25rem;
 }
 
 .show-menu, .hide-menu {

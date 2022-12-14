@@ -1,0 +1,31 @@
+.popup-image {
+    width: 100%;
+}
+
+.secret {
+    position: absolute;
+    top: 3%;
+    right: 12%;
+    color: #fff;
+    opacity: 0.2;
+    transform: rotate(30deg);
+}
+
+.caption {
+    text-align: center;
+}
+
+.popup-desc {
+    color: #fff;
+}
+
+.popup-desc-hidden {
+    cursor: zoom-in;
+    color: lightcoral;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.popup-desc-hidden:hover {
+    opacity: 1;
+}

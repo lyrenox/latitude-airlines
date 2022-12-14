@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+
+            .fullscreen {
+                width: 100%;
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .fullscreen img, .fullscreen h1, .fullscreen p {
+                margin: 0 auto;
+            }
+        </style>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <title>Latitude Airlines</title>
+    </head>
+    <body>
+        <section class="header">
+            <div class="container">
+                <div class="branding">
+                    <a href="index.html">
+                        <img class="logo" src="img/Icon.png" style="height: 48px;">
+                        <span class="title">latitude<span class="light">airlines</span></span>
+                    </a>
+                </div>
+                
+                <nav class="topnav">
+                    <a class="current">Day 1</a>
+                    <a href="booking.html">Book a Flight</a>
+                </nav>
+                <button class="show-menu" onclick="toggle('sidenav')">☰</button>
+            </div>
+            <div id="sidenav">
+                <button class="hide-menu" onclick="toggle('sidenav')">x</button>
+                <a class="current">Day 1</a>
+                <a href="booking.html">Book a Flight</a>
+            </div>
+        </section>
+
+        <div class="fullscreen">
+            <img src="img/latiasRip.png" style="width: 100px; height:100px">
+            <h1>404</h1>
+            <p>Oops. Our airline crashed into the unknown. Guess that broke history.</p>
+        </div>
+    </body>

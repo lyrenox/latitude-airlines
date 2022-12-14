@@ -5,7 +5,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="festive.css">
+        <link rel="stylesheet" href="festive-main.css">
+        <link rel="stylesheet" href="festive-a.css">
         <link rel="icon" type="image/x-icon" href="img/festive22/icon-14.png">
         <title>Twelve drummers drumming</title>
     </head>
@@ -21,16 +22,14 @@
                 
                 <nav class="topnav">
                     <a class="current">Day 1</a>
-                    <a>Pokemon Games</a>
-                    <a>Book a Flight</a>
+                    <a href="booking.html">Book a Flight</a>
                 </nav>
                 <button class="show-menu" onclick="toggle('sidenav')">☰</button>
             </div>
             <div id="sidenav">
                 <button class="hide-menu" onclick="toggle('sidenav')">x</button>
                 <a class="current">Day 1</a>
-                <a>Pokemon Games</a>
-                <a>Book a Flight</a>
+                <a href="booking.html">Book a Flight</a>
             </div>
         </section>
 
@@ -47,7 +46,9 @@
                 </p>
             </div>
         </section>
-        <p class="footer">Open the present for a surprise!</p>
+        <section class="footer">
+            <p>Something's inside the present!</p>
+        </section>
 
         <section id="popup-present">
             <div class="wrapper">
@@ -56,6 +57,10 @@
                     <span class="secret">v=</span>
                 </div>
                 <span class="close-button" onclick="toggle('popup-present')">x</span>
+            </div>
+            <div class="caption">
+                <p class="popup-desc">Gazing across the river in the lonely night.</p>
+                <p class="popup-desc-hidden">Am I hiding something? No.</span></p>
             </div>
         </section>
 
