@@ -13,11 +13,6 @@
 
 .secret {
     position: absolute;
-    top: 3%;
-    right: 12%;
-    color: #fff;
-    opacity: 0.2;
-    transform: rotate(30deg);
 }
 
 .caption {

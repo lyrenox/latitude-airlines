@@ -6,9 +6,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="festive-main.css">
-        <link rel="stylesheet" href="festive-b.css">
-        <link rel="icon" type="image/x-icon" href="img/festive22/icon-15.png">
-        <title>Eleven pipers piping</title>
+        <link rel="stylesheet" href="festive-a.css">
+        <link rel="icon" type="image/x-icon" href="img/festive22/icon-16.png">
+        <title>Ten lords a-leaping</title>
+        <style>
+            .secret {
+                top: 23%;
+                right: 50%;
+                color: #fff;
+                opacity: 0.6;
+                transform: rotate(30deg);
+            }
+        </style>
     </head>
     <body>
         <section class="header">
@@ -21,33 +30,33 @@
                 </div>
                 
                 <nav class="topnav">
-                    <a class="current">Day 2</a>
+                    <a class="current">Day 3</a>
                     <a href="booking.html">Book a Flight</a>
                 </nav>
                 <button class="show-menu" onclick="toggle('sidenav')">☰</button>
             </div>
             <div id="sidenav">
                 <button class="hide-menu" onclick="toggle('sidenav')">x</button>
-                <a class="current">Day 2</a>
+                <a class="current">Day 3</a>
                 <a href="booking.html">Book a Flight</a>
             </div>
         </section>
         <div class="advent-nav">
             <div class="container">
-                <a class="link-left" href="festive22-1.html"><< I</a>
-                <a class="link-right" href="festive22-3.html">III >></a>
+                <a class="link-left" href="festive22-2.html"><< II</a>
+                <a class="link-right" href="festive22-4.html">IV >></a>
             </div>
         </div>
         <section class="surprise">
             <div class="dragon">
-                <img src="img/festive22/latios-festive.png", height="400px", alt="Festive Latios">
+                <img src="img/festive22/latias-festive.png", height="400px">
                 <span class="clickable" onclick="toggle('popup-present')"></span>
             </div>
             <div class="credit">
                 <p>
                     Background by <a href=https://www.deviantart.com/skelmor/art/Pokemon-Mystery-Dungeon-Snowfall-Forest-782118163>Skelmor</a>
                     <br>
-                    Latios by <a href="https://www.deviantart.com/lyreon111/art/Festive-Latios-941029349">Lyreon</a>
+                    Latias by <a href="https://www.deviantart.com/lyreon111/art/Festive-Latias-940874697">Lyreon</a>
                 </p>
             </div>
         </section>
@@ -58,18 +67,14 @@
         <section id="popup-present">
             <div class="wrapper">
                 <div class="popup-content">
-                    <span class="label">[22:30:14]</span>
-                    <p class="popup-text">
-                        Alto Mare, this is my hometown.<br>
-                        It's been years since I came back here.<br>
-                        Last time I returned, all I see is people walking around, but I didn't seem to find any dragons.<br>
-                        I just wish I could reunite with my cousins this Christmas...<br>
-                        Nope. Can't sense any eon beings nearby.
-                    </p>
-                    <br>
-                    <p class="secret-text">secret letter 1: X</p>
+                    <img class="popup-image" src="img/festive22/Image_22_31_35.png" alt="I see something.">
+                    <span class="secret">-</span>
                 </div>
                 <span class="close-button" onclick="toggle('popup-present')">x</span>
+            </div>
+            <div class="caption">
+                <p class="popup-desc">I see something.</p>
+                <p class="popup-desc-hidden">I hid it in the picture.</span></p>
             </div>
         </section>
 
