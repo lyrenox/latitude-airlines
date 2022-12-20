@@ -52,7 +52,7 @@ a {
     justify-content: flex-end;
 }
 
-.topnav a, #sidenav a {
+.topnav a, .sidenav a {
     cursor: pointer;
     float: right;
     padding: 4px 6px;
@@ -63,7 +63,7 @@ a {
     margin: auto 6px;
 }
 
-#sidenav a {
+.sidenav a {
     width: 100%;
     margin: 0.5rem;
     float: left;
