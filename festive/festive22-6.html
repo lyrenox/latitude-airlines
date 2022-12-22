@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="css/festive-main.css">
+        <link rel="stylesheet" href="css/festive-b.css">
+        <link rel="icon" type="image/x-icon" href="img/icon-19.png">
+        <title>Seven swans a-swimming</title>
+    </head>
+    <body>
+        <section class="header">
+            <div class="container">
+                <div class="branding">
+                    <a href="../index.html">
+                        <img class="logo" src="../img/Icon.png" style="height: 48px;">
+                        <span class="title">latitude<span class="light">airlines</span></span>
+                    </a>
+                </div>
+                
+                <nav class="topnav">
+                    <a class="current">Day 6</a>
+                    <a href="booking.html">Book a Flight</a>
+                </nav>
+                <button class="show-menu" onclick="toggle('sidenav')">☰</button>
+            </div>
+            <div id="sidenav" class="sidenav">
+                <button class="hide-menu" onclick="toggle('sidenav')">x</button>
+                <a class="current">Day 6</a>
+                <a href="booking.html">Book a Flight</a>
+            </div>
+        </section>
+        <div class="advent-nav">
+            <div class="container">
+                <a class="link-left" href="festive22-5.html"><< V</a>
+                <a class="link-right" href="festive22-7.html">VII >></a>
+            </div>
+        </div>
+        <section class="surprise">
+            <div class="dragon">
+                <img src="img/latios-festive.png", height="400px", alt="Festive Latios">
+                <span class="clickable" onclick="toggle('popup-present')"></span>
+            </div>
+            <div class="credit">
+                <p>
+                    Background by <a href=https://www.deviantart.com/skelmor/art/Pokemon-Mystery-Dungeon-Snowfall-Forest-782118163>Skelmor</a>
+                    <br>
+                    Latios by <a href="https://www.deviantart.com/lyreon111/art/Festive-Latios-941029349">Lyreon</a>
+                </p>
+            </div>
+        </section>
+        <section class="footer">
+            <p>Something's inside the present!</p>
+        </section>
+
+        <section id="popup-present">
+            <div class="wrapper">
+                <div class="popup-content">
+                    <span class="label">December 24, 22:32:08</span>
+                    <br>
+                    <span class="label">[???]</span>
+                    <p class="popup-text">
+                        Wow… Alto Mare has really changed a lot since the last time I was here.
+                    </p>
+                    <p class="secret-text">secret letter 5: v</p> 
+                    <span class="label">[???]</span>
+                    <p class="popup-text">
+                        Is that a cafe? I really need a drink… but would those humans get weirded out since I’m a Pokemon…?
+                    </p>  
+                    <span class="label">[???]</span>
+                    <p class="popup-text">
+                        Nah, screw it. I’m heading there.
+                    </p>         
+                </div>
+                <span class="close-button" onclick="toggle('popup-present')">x</span>
+            </div>
+        </section>
+
+        <script>
+            function toggle(id) {
+                var popup = document.getElementById(id);
+                popup.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>

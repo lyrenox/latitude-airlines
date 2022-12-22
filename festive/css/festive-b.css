@@ -17,10 +17,20 @@
     font-weight: bold;
     color: cadetblue;
     display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
 }
 
-.popup-text {
+p.popup-text {
     color: #fff;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.image {
+    display: block;
+    cursor: zoom-in;
+    width: 60%;
 }
 
 .secret-text {
