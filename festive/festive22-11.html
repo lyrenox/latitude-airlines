@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/festive-11.css">
+        <link rel="icon" type="image/x-icon" href="img/icon-24.png">
+        <title>Two turtledoves</title>
+
+        <style>
+            body {
+                background-image: url('../img/Winter_blurred.png');
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="another-box">
+                <img class="box-img" src="img/Winter.png">
+            </div>
+        </div>
+        <span class="clickable" onclick="toggle('popup')"></span>
+
+        <div class="header">
+            <a class="branding" href="../index.html">
+                <img class="logo" src="../img/Icon.png" height="48px" width="auto">
+                <span class="title">latitude<span class="light">airlines</span></span>
+            </a>
+            <div class="nav">
+                <a href="festive22-10.html">&lt;</a> 
+                <p>XI</p>
+                <a href="festive22-12.html">&gt;</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Art by Lyreon | 24 December</p>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="container">
+                <span class="close-button" onclick="toggle('popup')">×</span>
+                <div class="content">
+                    <div class="content-header">December 24, 22:55:41</div>
+                    <div class="dialog">
+                        <span class="label">Latios</span>
+                        <p>So you've been working at this cafe for two years?</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latias</span>
+                        <p>Yeah. Where have you been?</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latios</span>
+                        <p>Just working on delivery stuff in Hoenn, haha.</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latias</span>
+                        <p>Oh yeah. Since you're back, why don't you visit our cousins in the Secret Garden? They've been waiting for you to return.</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latios</span>
+                        <p>Huh? The secret garden?</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latias</span>
+                        <p>Yeah. The place where we used to play when we were younger.</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latios</span>
+                        <p>Let's go then.</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latias</span>
+                        <p>Ok, let me ask Leah if I can leave earlier.</p>
+                    </div>
+                    <div class="secret">secret 10: 6</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggle(id) {
+                var popup = document.getElementById(id);
+                popup.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
