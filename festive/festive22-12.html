@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/festive-11.css">
+        <link rel="icon" type="image/x-icon" href="img/icon-25.png">
+        <title>Two turtledoves</title>
+
+        <style>
+            body {
+                background-color: rgb(60, 44, 2);
+            }
+
+            .clickable {
+                width: 200px;
+                height: 20%;    
+                position: fixed;
+                top: 24%;
+                right: 42%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="another-box">
+                <img class="box-img" src="img/Christmas.jpg">
+            </div>
+        </div>
+        <div class="clickable" onclick="toggle('popup')">
+            <div class="tip">Click me!</div>
+        </div>
+
+        <div class="header">
+            <a class="branding" href="../index.html">
+                <img class="logo" src="../img/Icon.png" height="48px" width="auto">
+                <span class="title">latitude<span class="light">airlines</span></span>
+            </a>
+            <div class="nav">
+                <a href="festive22-11.html">&lt;</a> 
+                <p>XII</p>
+                <a href="#" class="disabled">&gt;</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Art by <a href="https://www.pixiv.net/en/artworks/78232318">もこ</a> | 25 December</p>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="container">
+                <span class="close-button" onclick="toggle('popup')">×</span>
+                <div class="content">
+                    <div class="content-header">December 24, 23:01:15</div>
+                    <div class="dialog">
+                        <span class="label">Latias</span>
+                        <p>Ha, I won! Hurry Latios-san, you're so slow...</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latios</span>
+                        <p>Give me a moment. You really are fast, brat.</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latias</span>
+                        <p>Ready to go in there?</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Latios</span>
+                        <p>Mhm.</p>
+                    </div>
+                    <p>Door opens</p>
+                    <div class="dialog">
+                        <span class="label">Latias</span>
+                        <p>Everyone, Latios has returned!</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Flygon</span>
+                        <p>Yo! It's been years!</p>
+                    </div>
+                    <div class="dialog">
+                        <span class="label">Dragonite</span>
+                        <p>You're back!! Can I hug you?</p>
+                    </div>
+                    <p>This Christmas, we finally meet.</p>
+                    <p>That's the end of this little story.</p>
+                    <p>Anyway, I still have a surprise for you.</p>
+                    <p>If you noticed some letters and numbers hiding throughout this story, there's 11 of them.</p>
+                    <p>It's a youtube video id.</p>
+                    <p>Anyway, Merry Christmas everone!</p>
+                    <br><p>Huh... what do you mean the 11th letter?</p>
+                    <div class="secret">Oh, I forgot. Here it is: A</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggle(id) {
+                var popup = document.getElementById(id);
+                popup.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
