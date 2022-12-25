@@ -10,7 +10,18 @@
 
         <style>
             body {
-                background-image: url('../img/Winter_blurred.png');
+                background-image: url("img/Winter_blurred.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .clickable {
+                width: 75px;
+                height: 10%;    
+                position: fixed;
+                bottom: 24%;
+                right: 48%;
             }
         </style>
     </head>
@@ -21,7 +32,9 @@
                 <img class="box-img" src="img/Winter.png">
             </div>
         </div>
-        <span class="clickable" onclick="toggle('popup')"></span>
+        <div class="clickable" onclick="toggle('popup')">
+            <div class="tip">Click me!</div>
+        </div>
 
         <div class="header">
             <a class="branding" href="../index.html">
